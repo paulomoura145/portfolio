@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor--primaria: #000000;
+    --cor--secundaria: #f6f6f6;
+    --cor--terciaria: #22d4fd;
+
+    --fonte--primaria: 'krona one', sans-serif;
+    --fonte--secundaria: 'montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+}
+
+.about__cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.about__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.about__cabecalho__links {
+    text-decoration: none;
+    color: var(--cor--terciaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--fonte--secundaria);
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 15%;
+    gap: 82px;
+}
+
+.about__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about__titulo {
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--fonte--primaria);
+}
+
+.about__paragrafo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--fonte--secundaria);
+}
+
+.about__imagem {
+    width: 40%;
+    border: 4px outset var(--cor--terciaria);
+    border-radius: 8px;
+    box-shadow: 10px 20px var(--cor--terciaria);
+}
+
+.about__rodape {
+    color: var(--cor--primaria);
+    background-color: var(--cor--terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte--secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .about__cabecalho {
+        padding: 10%;
+    }
+
+    .about__menu {
+        justify-content: center;
+    }
+
+    .about__conteudo {
+        justify-content: center;
+        text-align: start;
+        width: auto;
+    }
+
+    .about__titulo {
+        font-size: 2rem;
+    }
+
+    .about__imagem {
+        width: 50%;
+    }
+}
